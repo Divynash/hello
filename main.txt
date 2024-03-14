@@ -1,0 +1,23 @@
+class TreeNode{
+  int val;
+  TreeNode left;
+  TreeNode Right;
+   
+   
+   TreeNode(int val){
+     this.val = val;
+   }
+}
+public class Main{
+  TreeNode firstIncorrectNode = null;
+  TreeNode secondIncorrectNode = null;
+  TreeNode prevNode = newTreeNode(Integer.MIN_VALUE);
+}
+public void recoverTree(TreeNode root){
+  inorder(root);
+  int temp = firstIncorrectNode.val;
+  firstIncorrectNode.val = secondIncorrectNode.val;
+  secondIncorrectNode.val = temp;
+
+}
+private void inorder
